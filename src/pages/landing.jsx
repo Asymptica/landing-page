@@ -51,19 +51,19 @@ export default function V1() {
 
       {/* Hero */}
       <section className="h-dvh flex flex-col pt-20">
-        <div className="max-w-7xl mx-auto px-6 w-full flex-1 flex flex-col justify-center md:flex-row md:items-center md:gap-16">
+        <div className="max-w-7xl mx-auto px-6 w-full flex-1 flex flex-col justify-center sm:flex-row sm:items-center sm:gap-8 md:gap-16">
           {/* Text */}
-          <div className="md:w-1/2">
+          <div className="sm:w-1/2">
             <motion.p
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="font-mono text-xs md:text-sm text-muted mb-3 md:mb-8 uppercase"
+              className="font-mono text-xs sm:text-xs md:text-sm text-muted mb-3 sm:mb-4 md:mb-8 uppercase"
             >
               We're a Research Lab
             </motion.p>
 
-            <h1 className="font-display font-extrabold text-5xl md:text-7xl lg:text-8xl leading-[0.88] text-balance md:mb-10">
+            <h1 className="font-display font-extrabold text-5xl sm:text-4xl md:text-6xl lg:text-8xl leading-[0.88] text-balance sm:mb-4 md:mb-10">
               <SplitText delay={0.4} stagger={0.05}>
                 Pushing intelligence to the
               </SplitText>
@@ -86,7 +86,7 @@ export default function V1() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.3, ease: [0.25, 0.1, 0.25, 1] }}
-              className="text-sm md:text-lg lg:text-xl text-muted max-w-xl leading-relaxed text-pretty hidden md:block mt-10"
+              className="text-sm sm:text-sm md:text-lg lg:text-xl text-muted max-w-xl leading-relaxed text-pretty hidden sm:block sm:mt-4 md:mt-10"
             >
               We reach the absolute limits of intelligence — not through brute force,
               but through radical efficiency. More capability from less compute, less data, less waste.
@@ -94,7 +94,7 @@ export default function V1() {
           </div>
 
           {/* Graph */}
-          <div className="mt-16 h-[32vh] md:mt-0 md:w-1/2 md:h-auto md:flex md:items-center">
+          <div className="mt-16 h-[32vh] sm:mt-0 sm:w-1/2 sm:h-auto sm:flex sm:items-center">
             <AsymptoticCurve className="w-full h-full" delay={1.6} />
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function V1() {
       {/* About */}
       <section className="py-32 bg-off-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div className="grid sm:grid-cols-2 gap-8 md:gap-16 items-start">
             <div>
               <FadeUp>
                 <p className="font-mono text-sm text-muted mb-4 uppercase">What we do</p>
@@ -266,13 +266,13 @@ export default function V1() {
           </FadeUp>
           <FadeUp delay={0.1}>
             <p className="font-mono text-sm text-muted mb-4 uppercase">Get in touch</p>
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-8">
               <h2 className="font-display font-bold text-3xl sm:text-4xl text-balance">
                 Ready to push the frontier?
               </h2>
               <a
                 href="mailto:hello@asymptica.com"
-                className="inline-flex items-center gap-2 bg-navy text-white px-8 py-4 rounded-full font-medium text-sm hover:scale-105 active:scale-95 transition-transform duration-150 shrink-0 self-start md:self-auto"
+                className="inline-flex items-center gap-2 bg-navy text-white px-8 py-4 rounded-full font-medium text-sm hover:scale-105 active:scale-95 transition-transform duration-150 shrink-0 self-start sm:self-auto"
               >
                 hello@asymptica.com
                 <span aria-hidden="true">&rarr;</span>
