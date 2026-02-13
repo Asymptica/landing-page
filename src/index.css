@@ -29,7 +29,6 @@ body {
   font-family: var(--font-sans);
   line-height: 1.6;
   overflow-x: hidden;
-  visibility: visible !important;
 }
 
 ::selection {

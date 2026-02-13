@@ -12,7 +12,7 @@ export function SplitText({ children, className, delay = 0, stagger = 0.04, once
   return (
     <span ref={ref} className={className}>
       {words.map((word, i) => (
-        <span key={i} className="inline-block overflow-hidden" style={{ paddingBottom: '0.25em', marginBottom: '-0.25em' }}>
+        <span key={i} className="inline-block" style={{ clipPath: 'inset(-5% -5% -20% -5%)' }}>
           <motion.span
             className="inline-block"
             initial={{ y: '110%' }}
