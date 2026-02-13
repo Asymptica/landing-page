@@ -15,8 +15,8 @@ export function SplitText({ children, className, delay = 0, stagger = 0.04, once
         <span key={i} className="inline-block" style={{ clipPath: 'inset(-5% -5% -20% -5%)' }}>
           <motion.span
             className="inline-block"
-            initial={{ y: '110%' }}
-            animate={inView ? { y: 0 } : { y: '110%' }}
+            initial={{ y: '140%' }}
+            animate={inView ? { y: 0 } : { y: '140%' }}
             transition={{
               duration: 0.5,
               ease: [0.25, 0.1, 0.25, 1],
