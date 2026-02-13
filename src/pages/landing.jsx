@@ -29,7 +29,7 @@ function FadeUp({ children, className, delay = 0 }) {
 
 export default function V1() {
   return (
-    <div className="min-h-dvh bg-white text-navy">
+    <div className="min-h-svh bg-white text-navy">
       {/* Nav */}
       <motion.header
         initial={{ y: -20, opacity: 0 }}
@@ -50,7 +50,7 @@ export default function V1() {
       </motion.header>
 
       {/* Hero */}
-      <section className="h-dvh flex flex-col pt-20">
+      <section className="h-svh flex flex-col pt-20">
         <div className="max-w-7xl mx-auto px-6 w-full flex-1 flex flex-col justify-center sm:flex-row sm:items-center sm:gap-8 md:gap-16">
           {/* Text */}
           <div className="sm:w-1/2">
