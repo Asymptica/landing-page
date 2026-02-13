@@ -29,7 +29,7 @@ function FadeUp({ children, className, delay = 0 }) {
 
 export default function V1() {
   return (
-    <div className="min-h-dvh bg-white text-navy overflow-x-hidden">
+    <div className="min-h-dvh bg-white text-navy">
       {/* Nav */}
       <motion.header
         initial={{ y: -20, opacity: 0 }}
