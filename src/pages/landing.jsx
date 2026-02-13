@@ -35,7 +35,7 @@ export default function V1() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="fixed top-0 inset-x-0 z-40 bg-white/80 backdrop-blur-sm border-b border-border"
+        className="fixed top-0 inset-x-0 z-40 bg-white border-b border-border"
       >
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="/1" className="font-display font-bold text-xl tracking-tight">
@@ -63,7 +63,7 @@ export default function V1() {
               We're a Research Lab
             </motion.p>
 
-            <h1 className="font-display font-extrabold text-5xl sm:text-4xl md:text-6xl lg:text-8xl leading-[0.88] text-balance sm:mb-4 md:mb-10">
+            <h1 className="font-display font-extrabold text-5xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl leading-[0.88] text-balance sm:mb-4 md:mb-10">
               <SplitText delay={0.4} stagger={0.05}>
                 Pushing intelligence to the
               </SplitText>
@@ -108,7 +108,7 @@ export default function V1() {
         >
           <motion.div
             animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+            transition={{ duration: 2, repeat: 3, ease: 'easeInOut' }}
           >
             <svg width="24" height="24" viewBox="0 0 20 20" fill="none" className="text-muted/60">
               <path d="M10 4v12m0 0l-4-4m4 4l4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
